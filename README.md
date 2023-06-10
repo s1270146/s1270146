@@ -1,4 +1,4 @@
-### Hi there 👋
+### 個人開発と勉強用のリポジトリ
 
 <!--
 **s1270146/s1270146** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=s1270146&theme=gruvbox
+)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=s1270146&theme=gruvbox
+)](https://github.com/anuraghazra/github-readme-stats)
