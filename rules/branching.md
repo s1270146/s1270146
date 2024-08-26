@@ -27,3 +27,34 @@
 2. リリースの準備が整ったらdevelopからreleaseブランチを作り、最終調整をします。その後、mainに統合しタグ付けを行います。
 3. releaseがmainに統合された後は、developにも同じ内容をマージしておきます。
 4. 本番環境で緊急対応が必要な場合は、mainからhotfixブランチを作成し、修正をmainとdevelopに反映させます。
+
+### ローカルでの手順
+
+[参考: Git ブランチ作成からマージされるまでの流れ](https://qiita.com/ucan-lab/items/47967757e688e9dc42db)
+
+0. ローカルのmainブランチ削除
+   1. リモートブランチにデタッチ ``git switch -d origin/main``
+   2. ローカルのmainを削除 ``git branch -D main``
+1. 新しいブランチを作成
+   1. リモートリポジトリの更新を取り込む ``git fetch``
+   2. 派生元の**develop**ブランチから新しく(例)**feature/user-authentication**を作成する ``git switch -c feature/user-authentication origin/develop``
+2. 作業した内容をコミット
+   1. ``git add .``
+   2. ``git commit `` commit messageのルールは**rules/commit_messages.md**を確認
+3. 作業ブランチに最新のdevelopブランチを取り込む
+   1. 作業途中のファイルは``git stash -u``
+   2. リモートリポジトリの更新を取り込む ``git fetch``
+   3. 最新の**develop**の情報を取得
+      1. コンフリクトが発生したら、対象ファイルを修正し解消
+      2. ``git add .``
+      3. ``git rebase --continue``
+      4. やり直す場合は ``git rebase --abort``でリベースする前の状態に戻す
+   4. スタッシュした内容を戻す ``git stash pop``
+4. 作業ブランチを整理する
+   1. コミットをきれいにする ``git rebase -i origin/main``
+5. リモートブランチへプッシュ
+   1. ``git push origin HEAD``
+6. ローカルのブランチを削除する
+   1. リモートブランチの更新を取り込む ``git fetch -p`` ``-p``をつけることで削除されたリモートブランチも反映される
+   2. リモートのmainブランチに切り替える ``git switch -d origin/main``
+   3. ローカルブランチを削除 ``git branch -D feature/user-authentication``
