@@ -1,17 +1,15 @@
-# GitHub 運用ルール
-
 ## Commit Messages
 
 **基本**
 
 ```
-<接頭辞>: <Emoji> <メッセージ>
+<接頭辞>: (<Emoji>) #<Issue番号> <メッセージ>
 
 # 例
-feat: :triangular_flag_on_post: create login page
+feat: :triangular_flag_on_post: #12 create login page
 ```
 
-### 接頭辞
+### 接頭辞(必須)
 
 - feat:
   - ユーザ向けに新機能を追加する場合に使用
@@ -37,6 +35,16 @@ feat: :triangular_flag_on_post: create login page
   - 依存関係の追加、更新やビルドタスクの変更など、開発プロセスに関わる場合に使用
   - 動作には影響しないもの
 
-### Emoji
+### Emoji(任意)
 
 [gitmoji](https://gitmoji.dev/)
+
+### Issue番号(推奨)
+
+\#(シャープ)とIssue番号を並べて書くことでIssueにcommitがリンクされる
+
+### メッセージ(必須)
+
+端的に説明
+
+具体的な説明は、Issueまたはその他のタスク管理の部分で管理する
