@@ -1,25 +1,6 @@
-<!--
-**s1270146/s1270146** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-:fire: I'm a graduate student of **University of Aizu**. :fire:
+:fire: I'm a Software engineer. :fire:
 
 :sparkles: I'm currently leaning **cryptography**, **software programming**, **network** and **database**. :sparkles:
-
-:rocket: This is my blog.
-[My Blog](https://mk-record.com/) :rocket:
-
-:art: This is my portfolio. [My Portfolio](https://koyo-mori.com/) :art:
 
 <!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=s1270146&theme=gruvbox)](https://github.com/anuraghazra/github-readme-stats) -->
 
